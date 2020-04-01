@@ -43,7 +43,6 @@ Things you may want to cover:
 |------|----|-------|
 |id|integer|null: false|
 |name|string|null: false|
-|member|string||
 
 ### Association
 - has_many :groups_users
@@ -56,8 +55,8 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |id|integer|null: false|
-|body|text|null: false|
-|image|string||
+|body|text|
+|image|string|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
